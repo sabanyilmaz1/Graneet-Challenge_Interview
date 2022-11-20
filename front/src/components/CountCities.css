@@ -1,0 +1,29 @@
+.count--green {
+  width: 600px;
+  height: 60px;
+  background-color: rgba(57, 187, 55, 0.63);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.count--red {
+  width: 600px;
+  height: 60px;
+  background-color: rgba(187, 55, 55, 0.63);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.count--label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  margin-left: 5%;
+}

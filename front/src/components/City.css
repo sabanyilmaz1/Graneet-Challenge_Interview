@@ -1,0 +1,28 @@
+.city {
+  width: 45%;
+  height: 55px;
+  background: rgba(22, 28, 41, 0.63);
+  margin-bottom: 3%;
+  margin-right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.city--name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.city--zipcode {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #8c8f9a;
+}
