@@ -1,0 +1,39 @@
+.search {
+  display: flex;
+  width: 1380px;
+  height: 80px;
+  left: 30px;
+  top: 30px;
+  align-items: center;
+  background: #d2e5e9;
+  border-radius: 10px;
+  margin: 2%;
+}
+
+.search--labelSearch {
+  width: 356px;
+  margin-left: 2%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.search--input {
+  width: 1081px;
+  height: 61px;
+  background: #f0fcff;
+  border-radius: 10px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  display: flex;
+  align-items: center;
+  color: #dcdcdc;
+}
