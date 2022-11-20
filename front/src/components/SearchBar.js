@@ -1,7 +1,7 @@
 import React from "react";
 import "./SearchBar.css";
 
-export const SearchBar = ({ searchTerm, setSearchTerm }) => {
+export const SearchBar = ({ searchTerm, setSearchTerm, handleChange }) => {
   return (
     <div className="search">
       <div className="search--labelSearch">Je recherche ...</div>
@@ -9,8 +9,8 @@ export const SearchBar = ({ searchTerm, setSearchTerm }) => {
         <input
           className="search--input"
           value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          placeholder="... une ville,un code postale"
+          onChange={handleChange}
+          placeholder="... une ville,un code postal"
         />
       </form>
     </div>
