@@ -1,26 +1,32 @@
-var minPathSum = function (grid) {
-  const i = grid.length - 1;
-  const j = grid[0].length - 1;
+var picpicpic = function (E) {
+  const lFin = E.length - 1;
+  const colFin = E[0].length - 1;
 
-  for (let k = 0; k <= i; ++k) {
-    for (let l = 0; l <= j; ++l) {
-      if (k > 0 && l > 0)
-        grid[k][l] = Math.max(
-          grid[k][l] + grid[k][l - 1],
-          grid[k - 1][l] + grid[k][l]
-        );
-      else if (k > 0 || l > 0) {
-        if (l > 0) grid[k][l] += grid[k][l - 1];
-        else grid[k][l] += grid[k - 1][l];
+  //On parcours la matrice
+  for (let l = 0; l <= lFin; l++) {
+    for (let c = 0; c <= colFin; c++) {
+      //Si c'est une case qui n'est pas sur la première ligne et la première colonne
+      if (c > 0 && l > 0)
+        /* On prend la valeur maximum entre la case du dessus 
+        et celle de gauche par rapport à la case actuelle 
+        et on ajoute la valeur de la case actuelle */
+        E[l][c] = Math.max(E[l][c] + E[l][c - 1], E[l - 1][c] + E[l][c]);
+      //Si c'est une case qui est sur la première ligne ou la première colonne
+      else if (l > 0 || c > 0) {
+        // On ajoute la valeur de la case actuelle à la case du dessus
+        if (c > 0) E[l][c] += E[l][c - 1];
+        // On ajoute la valeur de la case actuelle à la case de gauche
+        else E[l][c] += E[l - 1][c];
       }
-      console.log(grid);
+      console.log(E);
     }
   }
-  console.log(grid[i][j]);
-  return grid[i][j];
+  // On retourne la valeur de la case en bas à droite avec la valeur maximale possible
+  console.log(E[lFin][colFin]);
+  return E[lFin][colFin];
 };
 
-minPathSum([
+picpicpic([
   [5, 7, 3],
   [4, 2, 8],
   [7, 6, 5],

@@ -10,7 +10,7 @@ var binaryTransformation = function (M) {
     M = Math.floor(M / 2);
   }
   L = L.reverse();
-  // Count the maximum sequence of 0
+  // Compter le nombre de sequence de 0 et retourner le max
   let max = 0;
   let count = 0;
   for (let i = 0; i < L.length; i++) {
@@ -28,7 +28,5 @@ var binaryTransformation = function (M) {
   console.log(max);
   return max;
 };
-
-//convert to binary by hand
 
 binaryTransformation(65535);
