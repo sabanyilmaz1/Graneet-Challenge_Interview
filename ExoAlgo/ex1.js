@@ -7,8 +7,6 @@ var rendsLargent = function (L, M) {
       M = M - L[i];
     }
     if (M == 0) {
-      console.log(T);
-      console.log(T.length);
       return T.length;
     }
   }
@@ -18,6 +16,3 @@ var rendsLargent = function (L, M) {
 module.exports = {
   rendsLargent,
 };
-
-const test = rendsLargent([500, 200, 100, 50, 20, 10, 5], 0);
-console.log(test);

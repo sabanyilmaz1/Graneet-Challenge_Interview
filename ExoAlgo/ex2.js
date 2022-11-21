@@ -30,3 +30,7 @@ var binaryTransformation = function (M) {
 };
 
 binaryTransformation(65535);
+
+module.exports = {
+  binaryTransformation,
+};

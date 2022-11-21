@@ -2,7 +2,7 @@ var picpicpic = function (E) {
   const lFin = E.length - 1;
   const colFin = E[0].length - 1;
 
-  //On parcours la matrice
+  //On parcourt la matrice
   for (let l = 0; l <= lFin; l++) {
     for (let c = 0; c <= colFin; c++) {
       //Si c'est une case qui n'est pas sur la première ligne et la première colonne
@@ -31,3 +31,7 @@ picpicpic([
   [4, 2, 8],
   [7, 6, 5],
 ]);
+
+module.exports = {
+  picpicpic,
+};
