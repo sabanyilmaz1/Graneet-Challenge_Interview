@@ -4,6 +4,7 @@ import "./Cities.css";
 import { CountCities } from "./CountCities";
 import { City } from "./City";
 
+// Ce composant affiche la liste des villes
 export const Cities = ({ title, cities }) => {
   return (
     <div className="cities">

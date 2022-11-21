@@ -5,12 +5,15 @@ import { Cities } from "./components/Cities";
 import { useDebounce } from "./hooks/useDebounce";
 
 function App() {
+  //State
   const [searchTerm, setSearchTerm] = useState("");
   const [cities, setCities] = useState([{}]);
   const [isLoading, setIsLoading] = useState(false);
 
+  //Debounce
   const debouncedSearch = useDebounce(searchTerm, 800);
 
+  //Fetch mise à jour avec la recherche
   useEffect(() => {
     setIsLoading(true);
     fetch(`http://localhost:4200/api/city/${debouncedSearch}`)
@@ -37,6 +40,7 @@ function App() {
           "Loading ..."
         ) : (
           <>
+            {/* Affichage des villes en deux catégories */}
             <Cities
               title="Ville de métropole"
               cities={cities.metropoleCities}
