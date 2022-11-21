@@ -6,8 +6,8 @@ export const CountCities = ({ count }) => {
     <div className={count > 0 ? "count--green" : "count--red"}>
       <span className="count--label">
         {count > 0
-          ? `${count} correspondant au text saisi`
-          : "Aucune ville correspondant au text saisi"}
+          ? `${count} correspondant au texte saisi`
+          : "Aucune ville correspondant au texte saisi"}
       </span>
     </div>
   );

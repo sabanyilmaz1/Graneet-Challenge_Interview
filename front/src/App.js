@@ -23,12 +23,6 @@ function App() {
 
   const handleChange = (e) => {
     setSearchTerm(e.target.value);
-    // const apiLink = `http://localhost:4200/api/city/${e.target.value}`;
-    // fetch(apiLink)
-    //   .then((res) => res.json())
-    //   .then((resData) => {
-    //     setCities(resData);
-    //   });
   };
 
   return (
