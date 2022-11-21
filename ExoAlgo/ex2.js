@@ -1,6 +1,9 @@
 var binaryTransformation = function (M) {
   //Conversion en binaire
   let L = [];
+  if (M == 0) {
+    L = [0];
+  }
   while (M > 0) {
     if (M % 2) {
       L.push(1);
@@ -9,7 +12,8 @@ var binaryTransformation = function (M) {
     }
     M = Math.floor(M / 2);
   }
-  L = L.reverse();
+
+  // L = L.reverse(); Pas besoin de faire un reverse car on a pas de retourner le tableau binaire
   // Compter le nombre de sequence de 0 et retourner le max
   let max = 0;
   let count = 0;
@@ -24,12 +28,8 @@ var binaryTransformation = function (M) {
       max = count;
     }
   }
-  console.log(L);
-  console.log(max);
   return max;
 };
-
-binaryTransformation(65535);
 
 module.exports = {
   binaryTransformation,
