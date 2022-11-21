@@ -18,20 +18,18 @@ var picpicpic = function (E) {
         // On ajoute la valeur de la case actuelle à la case de gauche
         else E[l][c] += E[l - 1][c];
       }
-      console.log(E);
+      // console.log(E);
     }
   }
   // On retourne la valeur de la case en bas à droite avec la valeur maximale possible
-  console.log(E[lFin][colFin]);
+  //console.log(E[lFin][colFin]);
   return E[lFin][colFin];
 };
-
 picpicpic([
-  [5, 7, 3],
-  [4, 2, 8],
-  [7, 6, 5],
+  [4, 9, 7],
+  [7, 4, 2],
+  [2, 8, 9],
 ]);
-
 module.exports = {
   picpicpic,
 };
