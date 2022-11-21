@@ -52,7 +52,6 @@ const addDataInDB = () => {
   }
   // Recuperer le nombre d'élements dans le document City
   City.countDocuments({}).then((res) => {
-    console.log(res);
     if (res == 0) {
       // Si il n'y a pas d'élement, on ajoute les données dans la bd
       City.insertMany(result)
