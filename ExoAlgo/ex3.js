@@ -22,14 +22,9 @@ var picpicpic = function (E) {
     }
   }
   // On retourne la valeur de la case en bas à droite avec la valeur maximale possible
-  //console.log(E[lFin][colFin]);
   return E[lFin][colFin];
 };
-picpicpic([
-  [4, 9, 7],
-  [7, 4, 2],
-  [2, 8, 9],
-]);
+
 module.exports = {
   picpicpic,
 };
